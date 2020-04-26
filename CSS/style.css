@@ -1,0 +1,33 @@
+/* TAG SELECTORS*/
+      body{
+        background-color: #e0ffff;"
+      }
+      img {
+        border-radius: 50%;
+      }
+      hr {
+        border-top: dotted 5px grey;
+        height: 1px;
+        width: 5%;
+        align-items: center;
+      }
+      h1{
+          color: #66bfbf;
+      }
+      h3{
+        color: #66bfbf;
+    }
+
+    /* CLASS SELECTORS used when we want two different properties for same tag and can have more than one instance of the tag and can have more than one class for a property*/
+    .beacon{
+        background-color: #66bfbf;
+    }
+
+    .brocolli{
+        background-color: black;
+    }
+
+    /* ID SELECTORS single instance of this tag and only one id can be there for a property*/
+    #heading{
+        color: blue;
+    }

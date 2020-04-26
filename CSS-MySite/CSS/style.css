@@ -1,0 +1,142 @@
+body{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    line-height: 2;
+    margin: 0;
+}
+h1{
+    margin: 50 auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color:#66BFBF;
+    /* 100%=16px */
+    /* 1 em=16px */
+}
+
+h2{
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+h3{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif
+}
+hr{
+    border-top: dotted 5px grey;
+    width: 5%;
+}
+
+a{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: #EAF6F6;
+}
+/* CLASS */
+.topcontainer{
+    background-color: #EAF6F6;
+    margin-bottom: 40px;
+}
+.middlecontainer{
+    margin-bottom: 40px;
+}
+
+.bottom-container{
+    background-color: #66BFBF;
+    margin-top: 40px;
+    padding: 50px 0 20px;
+    border-bottom: 0;
+}
+
+.develop{
+    font-weight: normal;
+}
+.round{
+    border-radius: 50%;
+    height: 125px;
+    width:125px;
+}
+/* /* div{
+    background-color: #e4f9f5; 
+} */
+.topcloud{
+    position: relative;
+    left: 170px;
+    top: 20px;
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+.skills{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.skill-row{
+    margin-bottom: 30px;
+}
+
+.bottomcloud{
+    position: absolute;
+}
+
+.dnd{
+    margin-top: 60px;
+    line-height: 2;
+}
+.c{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.chilli{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+/* .clear-left{
+    clear: left;
+}
+.clear-right{
+    clear:right;
+} */
+
+.private{
+    color: #EAF6F6;
+}
+
+.style{
+    margin: 0;
+}
+.btn {
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
