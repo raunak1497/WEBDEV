@@ -12,6 +12,10 @@ app.get("/about",function(req,res){
     res.send("<h1> Raunak Singh </h1> <h2> I am A web Developer and a undergrad student of computer Science</h2>");
 });
 
+app.get("/contact",function(req,res){
+    res.send("<h1> Contact me at </h1> <h2> contact me at raunak1497@gmail.com </h2>");
+});
+
 app.listen(port,function(){
     console.log("server started on port 3000");
 });
