@@ -24,11 +24,20 @@ app.get("/",function(req,res){
             }
             console.log(JSON.stringify(object));
 
-            const temp = weatherdata.weather[0].description;
-            console.log(temp); 
+            const temp = weatherdata.main.temp;
+            const weatherdescription = weatherdata.weather[0].description;
+            // console.log(temp);
+
+            const icon = weatherdata.weather[0].icon;  
+            const imageURL = "http://openweathermap.org/img/wn/"+ icon +"@2x.png";
+
+            res.write("<h1> The weather is "  + weatherdescription + "</h1>");
+            res.write("<h1> The temperature in london is " + temp + " degrees celsius </h1>");
+            res.write("<img src= " + imageURL + ">");
+            res.send();
         });
     });
-        res.send("hello,world!!");
+        // res.send("hello,world!!"); we can have only one res send
     });
 
 app.listen(3000,function(){
