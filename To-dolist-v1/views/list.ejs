@@ -5,8 +5,13 @@
     <title>To do List</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
-    <h1>It's a <%= kindOfDay %> ! </h1>
+    
   <body>
+    <% if(kindOfDay === "Saturday" || kindOfDay === "Sunday"){ %>
+      <h1 style="color :purple"> <%= kindOfDay %> Todo List </h1>
+    <%}else{%>
+      <h1 style="color :yellowgreen"> <%= kindOfDay %> Todo List </h1>
+    <%}%>
   </body>
 
 </html>
