@@ -4,22 +4,34 @@
     <meta charset="utf-8">
     <title>To do List</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
     
   <body>
-    <h1> <%= kindOfDay %> </h1>
-
-    <ul>
-      <% for(var i =0; i< newListItem.length ; i++) { %>
-        <li> <%= newListItem[i] %></li>
-      <% } %>
+    <div class="box" id="heading">
+      <h1> <%= kindOfDay %> </h1>
+    </div>
+    
+    <div class="box">
       
-    </ul>
+      <ul>
+        <% for(var i =0; i< newListItem.length ; i++) { %>
+          <div class="item">
+            <input type="checkbox">
+            <p> <%= newListItem[i] %></p>
+          </div>
+          
+        <% } %>
+      </ul>
 
-    <form action="/" class="" method="POST">
-      <input type="text" name="newItem" class="">
-      <button class="" type="submit">Add</button>
-    </form>
+      <form action="/" class="item" method="POST">
+        <input type="text" name="newItem" class="" placeholder="New item" autocomplete="off">
+        <button class="" type="submit">+</button>
+      </form>
+
+    </div>
+
+    
   </body>
 
 </html>
