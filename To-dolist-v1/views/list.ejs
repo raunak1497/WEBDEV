@@ -1,15 +1,7 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>To do List</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-    
-  <body>
-    <div class="box" id="heading">
-      <h1> <%= kindOfDay %> </h1>
+ <%- include("header") -%>
+ 
+ <div class="box" id="heading">
+      <h1> <%= listTitle %> </h1>
     </div>
     
     <div class="box">
@@ -26,13 +18,9 @@
 
       <form action="/" class="item" method="POST">
         <input type="text" name="newItem" class="" placeholder="New item" autocomplete="off">
-        <button class="" type="submit">+</button>
+        <button type="submit" name="list" value=<%= listTitle %> >+</button>
       </form>
 
     </div>
 
-    
-  </body>
-
-</html>
-
+    <%- include("footer") -%>
